@@ -23,10 +23,12 @@
                     <a href="#" class="header__menu-item">Информация</a>
                     <a href="#" class="header__menu-item">Контакты</a>
                 </div>
+
+                <div class="header__menu-item d-lg-none">+7 (345) 359 99 99</div>
             </div>
         </div>
     </header>
-    <section class="container mb-5">
+    <section class="container intro-wrapper mb-5">
         <div class="intro">
             <div class="intro__content">
                 <img src="images/brand-icons/2.svg" alt="" class="intro__icon mb-3">
@@ -63,12 +65,13 @@
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
+                    <div class="intro__swiper-overlay"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="container mb-5 d-flex flex-column align-items-center">
+    <section class="container mb-5 d-none d-lg-flex flex-column align-items-center">
         <p class="text-center">Вот вам яркий пример современных тенденций — повышение уровня гражданского сознания
             позволяет оценить
             значение благоприятных перспектив. Внезапно, сторонники тоталитаризма в науке набирают популярность среди
@@ -77,15 +80,15 @@
         <img src="images/icons/chevron-down-double.svg">
     </section>
 
-    <section class="container mb-5">
-        <div class="row g-5">
+    <section class="container no-doubt mb-5">
+        <div class="row g-4 g-lg-5">
             <div class="col-12 col-lg-6">
-                <div class="cloud cloud--left-bottom cloud--image">
+                <div class="cloud no-doubt__left cloud--image">
                     <img src="images/1.png">
                 </div>
             </div>
             <div class="col-12 col-lg-6">
-                <div class="cloud cloud--top-right">
+                <div class="cloud no-doubt__right">
                     <img src="images/brand-icons/4.svg" class="cloud__icon cloud__icon--reverse mb-3" />
                     <h2>И нет сомнений, что стремящиеся вытеснить.</h2>
                     <p>Предварительные выводы неутешительны: семантический разбор внешних противодействий представляет
@@ -102,11 +105,11 @@
         </div>
     </section>
 
-    <section class="container mb-5">
-        <div class="row g-5">
-            <div class="col-12 col-lg-6">
-                <div class="cloud cloud--transparent cloud--no-padding-left">
-                    <img src="images/brand-icons/1.svg" class="cloud__icon mb-3" />
+    <section class="container idea mb-4 mb-lg-5">
+        <div class="row g-2 g-lg-5">
+            <div class="col-12 col-lg-6 order-2 order-lg-1">
+                <div class="cloud cloud--transparent idea__left">
+                    <img src="images/brand-icons/1.svg" class="cloud__icon d-none d-lg-block mb-3" />
                     <h2>Идейные соображения высшего порядка, а также укрепление и.</h2>
                     <p>Предварительные выводы неутешительны: семантический разбор внешних противодействий представляет
                         собой
@@ -120,8 +123,8 @@
                     </button>
                 </div>
             </div>
-            <div class="col-12 col-lg-6">
-                <div class="cloud cloud--image">
+            <div class="col-12 col-lg-6 order-1 order-lg-2">
+                <div class="cloud cloud--image idea__right">
                     <img src="images/2.png">
                     <div class="cloud__image-overlay"></div>
                     <img class="cloud__icon" src="images/2-icon.png">
@@ -130,16 +133,21 @@
         </div>
     </section>
 
-    <section class="container mb-5">
-        <div class="row g-5">
+    <section class="container">
+        <hr class="d-lg-none mb-4" />
+    </section>
+
+    <section class="container clarity mb-5">
+        <div class="row g-4 g-lg-5">
             <div class="col-12 col-lg-6">
-                <div class="cloud cloud--top-left-reverse cloud--square cloud--image">
+                <div class="cloud cloud--image clarity__left">
                     <img src="images/3.png">
                 </div>
             </div>
             <div class="col-12 col-lg-6">
-                <div class="cloud cloud--transparent cloud--auto-height">
-                    <img src="images/brand-icons/6.svg" class="cloud__icon cloud__icon--borders mb-3" />
+                <div class="cloud cloud--transparent clarity__right">
+                    <img src="images/brand-icons/6.svg"
+                        class="cloud__icon cloud__icon--borders d-none d-lg-block mb-3" />
                     <h2>Ясность нашей позиции очевидна:</h2>
                     <p>Предварительные выводы неутешительны: семантический разбор внешних противодействий представляет
                         собой
@@ -167,9 +175,11 @@
                         <input type="text" class="application-form__input mb-4" placeholder="Номер телефона">
                         <button class="btn application-form__button">
                             Отправить заявку
-                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.5 12.5133H20.5M20.5 12.5133L14.5 6.51331M20.5 12.5133L14.5 18.5133"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
                         </button>
                     </div>
@@ -192,10 +202,39 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="d-none d-lg-block">
         <div class="container p-5 d-flex justify-content-between align-items-center">
             <p class="mb-0">Ялуторовск 2024</p>
             <p class="mb-0">Мастерская сибири ©2024</p>
+        </div>
+    </footer>
+
+    <footer class="navbar-wrapper d-lg-none">
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar__menu">
+                    <a href="#" class="navbar__menu-item">
+                        <img src="images/icons/news.svg" alt="">
+                        Новости
+                    </a>
+                    <a href="#" class="navbar__menu-item">
+                        <img src="images/icons/masters.svg" alt="">
+                        Мастера
+                    </a>
+                    <a href="#" class="navbar__menu-item">
+                        <img src="images/icons/main.svg" alt="">
+                        Главная
+                    </a>
+                    <a href="#" class="navbar__menu-item">
+                        <img src="images/icons/info.svg" alt="">
+                        Инфо
+                    </a>
+                    <a href="#" class="navbar__menu-item">
+                        <img src="images/icons/contacts.svg" alt="">
+                        Контакты
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 
