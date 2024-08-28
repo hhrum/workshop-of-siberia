@@ -347,7 +347,7 @@ hr {
     .intro-wrapper {
         padding: 0;
         margin: 0;
-        margin-top: calc(0 - var(--header-height-with-spacings));
+        margin-top: calc(0px - var(--header-height-with-spacings));
     }
 
     .intro {
